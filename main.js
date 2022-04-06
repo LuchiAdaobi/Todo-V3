@@ -109,7 +109,7 @@ function deleteCheck(e) {
   }
   //   CHECK MARK
   if (item.classList[0] === 'complete-btn') {
-    item.parentElement.classList.toggle('completed');
+    todo.classList.toggle('completed');
   }
 }
 
@@ -146,6 +146,7 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodos);
 document.addEventListener('DOMContentLoaded', getTodosFromLS);
+
 clearEl.addEventListener('click', () => {
   location.reload();
   localStorage.clear();

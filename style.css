@@ -124,3 +124,14 @@
       background: #fff;
       color: #df7659;
   }
+
+  .clear{
+    font-size: 2rem;
+    margin-right: .5rem;
+    transition: all .3s ease;
+  }
+  .clear:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(40deg);
+  }

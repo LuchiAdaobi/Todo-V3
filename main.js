@@ -3,6 +3,7 @@ const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
+const clearEl = document.querySelector('.clear');
 
 // STORAGE
 // Check if todos already in LS
@@ -143,3 +144,7 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodos);
 document.addEventListener('DOMContentLoaded', getTodosFromLS);
+clearEl.addEventListener('click', () => {
+  location.reload();
+  localStorage.clear();
+});

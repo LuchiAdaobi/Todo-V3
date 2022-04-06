@@ -21,6 +21,9 @@
     justify-content: center;
     align-items: center;
   }
+  .input{
+    display: flex;
+  }
   form input,
   form button {
     padding: 0.5rem;
@@ -134,4 +137,12 @@
     cursor: pointer;
     text-shadow: 1px 3px 5px #000;
     transform: rotate(40deg);
+  }
+
+  /* MEDIA QUERIES */
+
+  @media(max-width: 650px){
+    form {
+      flex-direction: column-reverse;
+    }
   }

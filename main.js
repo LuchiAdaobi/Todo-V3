@@ -51,11 +51,13 @@ function getTodosFromLS() {
 }
 
 // REMOVE FROM LS
-// function removeLSTodo(todo) {
-//   const todos = checkTodos();
-//   const todoIndex = todo.children[0].innerText;
-//   //   todos.splice()
-// }
+function removeLSTodo(todo) {
+  const todos = checkTodos();
+  const todoIndex = todo.children[0].innerText;
+  todos.splice(todos.indexOf(todoIndex), 1);
+
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
 
 // FUNCTIONS
 function addTodo(event) {
@@ -100,7 +102,7 @@ function deleteCheck(e) {
   if (item.classList.contains('trash-btn')) {
     //   animation
     todo.classList.add('fall');
-    // removeLSTodo(todo);
+    removeLSTodo(todo);
     todo.addEventListener('transitionend', () => {
       todo.remove();
     });

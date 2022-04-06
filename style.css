@@ -53,21 +53,21 @@
     list-style: none;
   }
   .todo {
-    margin: 0.5rem;
-    background: #fff;
-    color: black;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.5s ease;
+   margin: 0.5rem;
+   background: #fff;
+   color: #111;
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: all .3s ease;
   }
   .todo li {
-    flex: 1;
+   flex: 1;
   }
   .trash-btn,
   .complete-btn {
-    background: #f05c34;
+    background: #ff6f47;
     color: #fff;
     border: none;
     padding: 1rem;
@@ -77,19 +77,19 @@
   .complete-btn {
     background-color: rgb(73, 204, 73);
   }
-  .todo-item {
+  .todo-item { 
     padding: 0rem 0.5rem;
   }
   .fa-trash,
   .fa-check {
-    pointer-events: none;
+   pointer-events: none;
   }
   .completed {
     text-decoration: line-through;
-    opacity: 0.6;
-  }
+    opacity: 0.5;
+  } 
   .fall {
-    transform: translateY(8rem) rotateZ(30deg);
+    transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
   }
   select{
@@ -100,25 +100,25 @@
       border: none;
   }
   .select{
-      margin: 1rem;
-      position: relative;
-      overflow: hidden;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden; 
   }
   select{
       color: #ff6f47;
-      width: 10rem;
       cursor: pointer;
-      padding: 1.1rem;
+      width: 10rem;
+      padding: 1rem;
+      font-size: .9rem;
   }
   .select::after{
       content: '\25BC';
-      position: absolute;
       background: #df7659;
+      position: absolute;
       top: 0;
-      right: 0;
-      padding: 1rem;
+      right: 0; 
       pointer-events: none;
-      transition: all .3s ease;
+      padding: 1rem;
   }
   .select:hover::after {
       background: #fff;
